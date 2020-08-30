@@ -10,7 +10,7 @@
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo">
+      <img src="<%=require('../src/images/logo.svg').default%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -42,7 +42,7 @@
     </div>
     <div class="popup popup_form_edit">
       <div class="popup__content">
-        <img src="<%=require('./images/close.svg').default%>" alt="close button" class="popup__close popup__close_form">
+        <img src="<%=require('../src/images/close.svg').default%>" alt="close button" class="popup__close popup__close_form">
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="new">
             <input type="text" name="name" class="popup__input popup__input_type_name" placeholder="Название">
@@ -55,7 +55,7 @@
     </div>
     <div class="popup popup_user_edit">
       <div class="popup__content popup__content_edit">
-        <img src="<%=require('./images/close.svg').default%>" alt="" class="popup__close popup__close_user">
+        <img src="<%=require('../src/images/close.svg').default%>" alt="" class="popup__close popup__close_user">
         <h3 class="popup__title popup__title_edit">Редактировать профиль</h3>
         <form class="popup__form" name="edit">
             <input type="text" name="name" class="popup__input popup__input_type_name" value="Jaques Causteau" placeholder="Jaques Causteau">
@@ -70,7 +70,7 @@
     
     <div class="popup popup-image">
       <div class="popup__content_image">
-      <img src="<%=require('./images/close.svg').default%>" alt="close button" class="popup__close popup__close_image">
+      <img src="<%=require('../src/images/close.svg').default%>" alt="close button" class="popup__close popup__close_image">
         <img src="https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg" alt="" class="big_image">
 
       </div>
