@@ -1,17 +1,16 @@
 import "./style.css";
-import {API} from './API';
-import {Card} from './Card';
-import {CardList} from './CardList';
-import {FormValidator} from './FormValidator';
-import {Popup} from './Popup';
-import {UserInfo} from './UserInfo';
+import API from '../src/js/Api';
+import Card from '../src/js/Card';
+import CardList from '../src/js/CardList';
+import FormValidator from '../src/js/FormValidator';
+import Popup from '../src/js/Popup';
+import UserInfo from '../src/js/UserInfo'
 
-const baseUrl = process.env.NODE_ENV === 'development' ? 'https://nomoreparties.co/cohort12' : 'http://nomoreparties.co/cohort12';
+const ApiUrl = process.env.NODE_ENV === "production" ? "https://nomoreparties.co/cohort12" : "http://nomoreparties.co/cohort12";
 
-(function () {
 
     const api = new API({
-        baseUrl: 'https://nomoreparties.co/cohort12',
+        baseUrl: ApiUrl,
         headers: {
             authorization: 'cacecd25-6927-4bc6-841e-a9732a22d8d7',
             'Content-Type': 'application/json'
@@ -121,5 +120,3 @@ const baseUrl = process.env.NODE_ENV === 'development' ? 'https://nomoreparties.
         userInfo.setUserInfo(res.name, res.about);
         userInfo.updateUserInfo();
     })
-  
-})();

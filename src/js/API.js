@@ -1,4 +1,4 @@
-export class API {
+export default class API {
     constructor(options) {
         this.baseUrl = options.baseUrl;
         this.headers = options.headers;
