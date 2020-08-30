@@ -18,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/Romul220V/Project11-1/issues"
   },
-  
   "devDependencies": {
     "@babel/cli": "^7.10.5",
     "@babel/core": "^7.11.4",
@@ -29,7 +28,7 @@
     "css-loader": "^4.2.2",
     "cssnano": "^4.1.10",
     "file-loader": "^6.0.0",
-    "gh-pages": "~2.1.0",
+    "gh-pages": "^2.1.1",
     "html-webpack-plugin": "^4.3.0",
     "image-webpack-loader": "^6.0.0",
     "mini-css-extract-plugin": "^0.11.0",

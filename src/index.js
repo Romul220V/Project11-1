@@ -11,7 +11,7 @@ const baseUrl = process.env.NODE_ENV === 'development' ? 'https://nomoreparties.
 (function () {
 
     const api = new API({
-        baseUrl,
+        baseUrl: 'https://nomoreparties.co/cohort12',
         headers: {
             authorization: 'cacecd25-6927-4bc6-841e-a9732a22d8d7',
             'Content-Type': 'application/json'
