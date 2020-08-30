@@ -1,4 +1,4 @@
-class Popup {
+export class Popup {
     constructor(containerPopup) {
         this.containerPopup = containerPopup;
         const closeButton = this.containerPopup.querySelector('img');

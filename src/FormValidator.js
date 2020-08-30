@@ -1,12 +1,8 @@
-class FormValidator {
+export class FormValidator {
     constructor(formContainer) {
         this.formContainer = formContainer;
         this.submitButton = formContainer.querySelector('.popup__button');
         this.submitButton.classList.add('popup__button_on');
-        /*
-            Можно лучше: сделать класс FormValidator более универсальным и обрабатывать все
-            поля ввода на форме, а не только два
-        */
         this.input1 = formContainer.querySelectorAll('input')[0];
         this.input2 = formContainer.querySelectorAll('input')[1];
         this.error1 = formContainer.querySelectorAll('span')[0];
@@ -31,17 +27,6 @@ class FormValidator {
         const inputValue = input.value;
         if (inputValue.length === 0) {
             errorElement.style.display = "inline";
-              /*
-                Можно лучше: сообщения об ошибках вынести в отдельный объект, а не хардкодить их в функции
-                Если понадобится перевести приложение на другой язык можно будет передавать функции другой объект
-                errorMessages = {
-                    empty: 'Это обязательное поле',
-                    wrongLength: 'Должно быть от 2 до 30 символов'
-                    ......
-                }
-                И передавать этот объект в конструктор класса, это может быть полезным,
-                если придется перевести приложение на другой язык
-            */
             errorElement.textContent = "Это обязательное поле";
         }
         if (inputValue.length === 1 || inputValue.length > 29) {
